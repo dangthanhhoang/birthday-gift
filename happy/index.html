@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ================= BACKGROUND ================= -->
+    <div id="background">
+        <div class="stars"></div>
+        <div class="overlay"></div>
+    </div>
+
+    <!-- ================= MUSIC ================= -->
+    <audio id="bgMusic" loop>
+        <source src="asset/music/23.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- ================= WELCOME ================= -->
+    <section id="welcome" class="screen active">
+
+        <div class="glass-card">
+
+            <h3 class="small-title">
+                Có một món quà dành riêng cho em
+            </h3>
+
+            <h1 class="main-title">
+                Happy Birthday
+            </h1>
+
+            <p class="subtitle">
+                Hãy mở món quà này nhé ❤️
+            </p>
+
+            <button id="openGiftBtn">
+                🎁 MỞ QUÀ
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= GIFT ================= -->
+    <section id="gift" class="screen">
+
+        <div class="gift-container">
+
+            <div class="gift-box">
+
+                <img
+                    src="asset/images/gift.png"
+                    alt="Gift Box"
+                >
+
+            </div>
+
+            <h2>Chạm để mở hộp quà</h2>
+
+        </div>
+
+    </section>
+
+    <!-- ================= LETTER ================= -->
+    <section id="letter" class="screen">
+
+        <div class="letter-card">
+
+            <h2>💌</h2>
+
+            <h1>Gửi người con gái đặc biệt nhất</h1>
+
+            <p id="typingText"></p>
+
+            <button id="nextBtn">
+                Tiếp tục ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section id="gallery" class="screen">
+
+        <h1>📸 Những khoảnh khắc của chúng ta</h1>
+
+        <div class="gallery-container">
+
+    <img src="asset/images/1.jpg" onclick="goFinal()">
+    <img src="asset/images/2.jpg" onclick="goFinal()">
+    <img src="asset/images/3.jpg" onclick="goFinal()">
+    <img src="asset/images/4.jpg" onclick="goFinal()">
+    <img src="asset/images/5.jpg" onclick="goFinal()">
+
+</div>
+
+    </section>
+
+    <!-- ================= VIDEO ================= -->
+    <section id="video" class="screen">
+
+        <h1>❤️ Một điều anh muốn gửi đến em</h1>
+
+        <video controls>
+
+            <source src="assets/videos/video.mp4" type="video/mp4">
+
+        </video>
+
+    </section>
+
+    <!-- ================= FINAL ================= -->
+    <section id="final" class="screen">
+
+        <div class="final-content">
+
+            <h1>
+                Happy Birthday
+            </h1>
+
+            <h2>
+                My Love ❤️
+            </h2>
+
+            <p>
+                Cảm ơn em đã xuất hiện trong cuộc đời anh.
+            </p>
+
+            <button id="restartBtn">
+                Xem lại từ đầu
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EFFECT ================= -->
+
+    <canvas id="fireworks"></canvas>
+
+    <div id="hearts"></div>
+
+    <div id="flowers"></div>
+
+    <!-- ================= SCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
